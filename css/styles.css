@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+#bodyTag {
+    background-color: #7918ba;
+    color: #f2f2f2;
+    padding: 15% 5% 5% 15%;
+}
+
+/*div {*/
+    /*border: solid;*/
+/*}*/
+
+#quote-container {
+    background-color: #333333;
+    min-height: 300px;
+    max-width: 90%;
+    position: relative;
+}
+
+#quote {
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 48px;
+    padding: 10px 10px 50px 35px;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+#button-panel {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 40px 40px 40px 40px;
+}
+
+#quote-button {
+    margin: 0 15px 0 0;
+    float: left;
+}
+
+#twitter-button {
+    margin-right: 0px;
+}
+
+#author-container {
+    max-width: 90%;
+    font-size: 22px;
+    padding: 20px 20px 10px 40px
+}
