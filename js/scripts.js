@@ -4,9 +4,17 @@
 
 var BaseURL = "https://twitter.com/intent/tweet?text=";
 
+/*
+ This function builds up your text to tweet by trimming extra spaces from the quote and the author.
+ */
+
 function tweetText() {
     $("a[href^='https://twitter.com/intent/tweet?text=']").prop("href", BaseURL + $("#quote").text().trim() + "%0D%0A" + $("#author-container").text().trim());
 }
+
+/*
+ This function gets the JSON from https://quotesondesign.com/api-v4-0/ and injects it into the div containers as a quote and it's author
+ */
 
 function getNewQuote() {
     $("#quote").fadeOut(500, function () {
