@@ -4,17 +4,28 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <meta charset="UTF-8">
     <title>A Random Quote Generator</title>
 </head>
 <body id="bodyTag">
 <div id="quote-container">
-    <div id="quote">There’s a difference between being obsessed and being motivated.</div>
+    <div id="quote"></div>
     <div id="button-panel">
         <a id="quote-button" class="btn btn-primary">Next Quote</a>
-        <a id="twitter-button" class="btn btn-primary .twitter-share-button"><span class="fa fa-twitter fa-1x"></span>Tweet!</a>
+        <a id="twitter-button" target="_blank" href="https://twitter.com/intent/tweet?text="
+           class="btn btn-primary .twitter-share-button">
+            <span class="fa fa-twitter fa-1x"></span>Tweet!
+        </a>
     </div>
 </div>
-<div id="author-container">- Mark Zuckerburg</div>
+<div id="author-container"></div>
+<script>
+    $(document).ready(function () {
+        getNewQuote();
+        $('#quote-button').on('click', getNewQuote);
+    });
+</script>
 </body>
 </html>

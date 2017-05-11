@@ -6,10 +6,6 @@
     padding: 15% 5% 5% 15%;
 }
 
-/*div {*/
-    /*border: solid;*/
-/*}*/
-
 #quote-container {
     background-color: #333333;
     min-height: 300px;
@@ -39,7 +35,7 @@
 }
 
 #twitter-button {
-    margin-right: 0px;
+    margin-right: 50px;
 }
 
 #author-container {
